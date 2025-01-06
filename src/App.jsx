@@ -7,7 +7,10 @@ function App() {
   const [count, setCount] = useState(0)
 
   return (
-    <div className='bg-[hsl(var(--background))] w-full h-[100vh]'></div>
+    <div className='bg-[hsl(var(--background))] w-full h-[100vh]'>
+      <h1 className='text-white  font-[family-name:var(--font-heading)] text-xl'>Hello world</h1>
+      <h1 className='text-white font-[var(--font-geist-sans)] text-xl'>Hello world</h1>
+    </div>
 
   )
 }
