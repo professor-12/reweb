@@ -56,6 +56,32 @@
     --editor-accent: 260 99% 70%;
 }
 
+.landing-theme {
+    --background: 0 0% 0%;
+    --foreground: 270 100% 100%;
+    --card: 0 0% 13%;
+    --card-foreground: 210 40% 98%;
+    --popover: 222.2 84% 4.9%;
+    --popover-foreground: 210 40% 98%;
+    --primary: 241 100% 72%;
+    --primary-foreground: 210 40% 98%;
+    --primary-gradient: 242 100% 80%;
+    --secondary: 0 0% 13%;
+    --secondary-foreground: 210 40% 98%;
+    --secondary-focus: 0 0% 10%;
+    --muted: 0 0% 14.9%;
+    --muted-foreground: 0 0% 60%;
+    --accent: 270 100% 100%;
+    --accent-foreground: 0 0% 0%;
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 210 40% 98%;
+    --border: 0 0% 13%;
+    --input: 217.2 32.6% 17.5%;
+    --ring: 212.7 26.8% 83.9%;
+    --gradient: 241 100% 72%;
+    --gradient-secondary: 242 100% 80%;
+    --radius: 1rem;
+}
 body {
     --font-geist-sans: "Geist", -apple-system, BlinkMacSystemFont, "Segoe UI",
         Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif,
@@ -66,6 +92,7 @@ body {
         "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif,
         "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
         "Noto Color Emoji";
+    background: hsl(var(--background));
 }
 
 @font-face {
@@ -87,4 +114,11 @@ body {
     font-family: var(--font-geist-sans), ui-sans-serif, system-ui, sans-serif,
         "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
         "Noto Color Emoji";
+}
+
+.video-3d-container {
+    /* perspective function in transform property */
+    /* transform: perspective(1200px) rotateX(30deg) scaleX(0.8) scaleY(0.8); */
+    transform-origin: top center;
+    box-shadow: 0 0 0 8px hsl(var(--primary) / 0.3);
 }
