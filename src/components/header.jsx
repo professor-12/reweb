@@ -3,7 +3,7 @@ import React from 'react'
 const Header = () => {
       return (
             <header className='max-md:bg-background bg-background/40 sticky top-0 w-full z-[99999] backdrop-blur-md text-white'>
-                  <div className='mx-auto max-w-[1200px] h-[70px] gap-[10px]  flex justify-between items-center px-[32px]'>
+                  <div className='mx-auto container h-[70px] gap-[10px]  flex justify-between items-center '>
                         <Logo />
                         <div className='flex md:hidden items-center gap-4'>
                               <button className='inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-[calc(1rem-2px)] text-sm font-medium transition-colors focus-visible:outline-none disabled:pointer-events-none disabled:opacity-50 bg-[linear-gradient(to_bottom_right,hsl(var(--primary-gradient))_0%,hsl(var(--primary))_60%)] text-primary-foreground hover:bg-[linear-gradient(to_bottom_right,hsl(var(--primary-gradient)/0.9)_0%,hsl(var(--primary)/0.9)_60%)] h-10 px-4 py-2 cursor-pointer'>Get Started</button>

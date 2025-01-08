@@ -9,10 +9,10 @@ const Video3d = () => {
       const scale = useTransform(scrollYProgress, [0, 1], [0.789, 1])
       return (
             <>
-                  <div style={{ perspective: "1000px" }} className='container hidden mx-auto max-w-[90rem] md:flex justify-center'>
+                  <div style={{ perspective: "1200px" }} className='container hidden md:flex justify-center'>
                         <motion.div
                               ref={containerRef}
-                              className="shadow shadow-white video-3d-container aspect-video overflow-hidden rounded-lg h-[50%] w-[80%] md:block  bg-background sm:mt-8"
+                              className="video-3d-container overflow-hidden rounded-lg aspect-video w-full   bg-background sm:mt-8"
                               style={{
                                     rotateX: rotate,
                                     scaleX: scale,
@@ -35,7 +35,7 @@ const Video3d = () => {
                   </div>
                   <motion.div
 
-                        className="hidden aspect-video overflow-hidden rounded-lg h-[50%] w-[90%]   bg-background sm:mt-8"
+                        className="hidden max-md:block aspect-video overflow-hidden rounded-lg w-full   bg-white sm:mt-8"
                   >
                         <video
                               className="rounded-lg w-full h-full duration-500 bg-cover"

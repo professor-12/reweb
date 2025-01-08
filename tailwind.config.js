@@ -9,6 +9,8 @@ export default {
                 "primary-foreground": "hsl(var(--primary-foreground))",
                 "muted-foreground": "hsl(var(--muted-foreground))",
                 gradient: "hsl(var(--gradient))",
+                "gradient-secondary": "hsl(var(--gradient-secondary))",
+                card: "hsl(var(--card))",
             },
             fontFamily: {
                 "geist-sans": "var(--font-geist-sans)",

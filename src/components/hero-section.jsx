@@ -8,7 +8,7 @@ import { useMotionValueEvent, useScroll, useTransform, motion } from 'framer-mot
 const HeroSection = () => {
       const containeref = useRef(null)
       const { scrollYProgress } = useScroll({ target: containeref })
-      const scrollY = useTransform(scrollYProgress, [0, 1], [1, .1])
+      const scrollY = useTransform(scrollYProgress, [0, 1], [1, 0])
       const [scrollYState, setScrollYState] = React.useState(1)
 
       useMotionValueEvent(scrollY, "change", (latest) => {
@@ -23,12 +23,13 @@ const HeroSection = () => {
                   }}
                   className="py-16 pt-28 bg-no-repeat bg-cover"
             >
-                  <div className="container mx-auto relative z-20 flex flex-col items-center gap-8 sm:gap-10">
+                  <div className="container  relative z-20 flex flex-col items-center gap-8 sm:gap-10">
                         {/* Heading */}
                         <h1 className="text-balance text-5xl font-medium tracking-tighter sm:text-6xl lg:text-[5rem] text-center font-heading mb-[-5px] bg-clip-text pb-[5px] text-transparent [background-image:linear-gradient(to_bottom_right,hsl(var(--foreground))_0%,hsl(var(--foreground))_50%,hsl(var(--primary-gradient)/1)_100%)]">
                               The visual builder for <br /> Next.js & Tailwind
                         </h1>
-
+                        <div className='absolute left-[27%] top-56 z-10 hidden size-60 bg-gradient-secondary/55 [filter:blur(190px)] md:block'></div>
+                        <div class="absolute -left-32 top-20 z-10 size-52 bg-gradient-secondary/30 [filter:blur(90px)] md:hidden"></div>
                         {/* Subtext */}
                         <p className="max-w-[33rem] text-balance text-center text-lg text-[#d4d8dd] sm:text-xl">
                               Build at the speed of no-code. Export Next.js, Tailwind and shadcn/ui code. Customize without limits.
@@ -60,9 +61,7 @@ const HeroSection = () => {
                               <Tailwindcss />
                               <Shadcn />
                         </div>
-
                         <Video3d />
-                        <h1 className='text-white'>ca</h1>
                   </div>
             </motion.section>
       );
