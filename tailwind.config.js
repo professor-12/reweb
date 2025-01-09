@@ -11,6 +11,7 @@ export default {
                 gradient: "hsl(var(--gradient))",
                 "gradient-secondary": "hsl(var(--gradient-secondary))",
                 card: "hsl(var(--card))",
+                secondary: "hsl(var(--secondary))",
             },
             fontFamily: {
                 "geist-sans": "var(--font-geist-sans)",
