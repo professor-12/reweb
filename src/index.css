@@ -142,6 +142,8 @@ body {
     padding-right: 2rem;
     padding-left: 2rem;
     max-width: 1200px;
+    position: relative;
+    overflow: hidden;
 }
 
 .cursor-edit {

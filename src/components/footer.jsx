@@ -32,29 +32,74 @@ const Footer = () => {
                               </span>
                               <p className='text-muted-foreground '>Code at the speed of no-code.</p>
                               <ul className='flex mt-2 text-muted-foreground items-center gap-6'>
-                                    <li><Twitter /></li>
-                                    <li><Discord /></li>
-                                    <li><Youtube /></li>
-                                    <li><LinkedIn /></li>
-                                    <li><Gmail /></li>
+                                    <li>
+                                          <a target='_blank' href="https://twitter.com/BadejoEmma56434?t=YMS4ylFRRXrL_HaDuP05yA&s=09">
+                                                <Twitter />
+                                          </a>
+                                    </li>
+                                    <li>
+                                          <a href="" target="_blank" rel="noopener noreferrer">
+                                                <Discord />
+                                          </a>
+                                    </li>
+                                    <li>
+                                          <a href="http://">
+                                                <Youtube />
+                                          </a>
+                                    </li>
+                                    <li>
+                                          <a href="https://www.linkedin.com/in/badejo-emmanuel-890414293?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" rel="noopener noreferrer">
+                                                <LinkedIn />
+                                          </a>
+                                    </li>
+                                    <li>
+                                          <a href="mailto:badejoemmanuel805@gmail.com">
+                                                <Gmail />
+                                          </a>
+
+                                    </li>
                               </ul>
                               <p className='h-12 text-muted-foreground mt-10 text-xs'>© 2024 Reweb - P.IVA 03917380127</p>
                         </div>
                         <ul className='flex gap-20'>
                               <ul className='space-y-4'>
-                                    <li className='font-geist-sans font-semibold'>Community</li>
-                                    <li className='text-muted-foreground text-sm'>Discord</li>
-                                    <li className='text-muted-foreground text-sm'>Affiliates</li>
+                                    <li className='font-geist-sans font-semibold'>
+                                          <a href="">
+                                                Community
+                                          </a>
+                                    </li>
+                                    <li className='text-muted-foreground text-sm'>
+                                          <a href="">
+                                                Discord
+                                          </a>
+                                    </li>
+                                    <li className='text-muted-foreground text-sm'>
+                                          <a href="">
+                                                Affiliates
+                                          </a>
+                                    </li>
                               </ul>
                               <ul className='space-y-4'>
-                                    <li className='font-geist-sans font-semibold'>Legal</li>
-                                    <li className='text-muted-foreground text-sm'>Terms of Service</li>
-                                    <li className='text-muted-foreground text-sm'>Privacy policy</li>
+                                    <li className='font-geist-sans font-semibold'>
+                                          <a href="">
+                                                Legal
+                                          </a>
+                                    </li>
+                                    <li className='text-muted-foreground text-sm'>
+                                          <a href="">
+                                                Terms of Service
+                                          </a>
+                                    </li>
+                                    <li className='text-muted-foreground text-sm'>
+                                          <a href="">
+                                                Privacy policy
+                                          </a>
+                                    </li>
 
                               </ul>
                         </ul>
                   </div>
-            </footer>
+            </footer >
       )
 }
 
