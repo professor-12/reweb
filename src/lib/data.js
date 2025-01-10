@@ -54,7 +54,7 @@ export const testimonial_data = [
     },
     {
         comment: "This is my new favorite way of building projects quickly.",
-        picture: "public/avatar-paul.webp",
+        picture: "/avatar-paul.webp",
         name: "Paul Bratslavsky",
         username: "@codingthirty",
     },
