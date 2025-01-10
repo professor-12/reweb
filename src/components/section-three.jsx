@@ -2,10 +2,10 @@ import React, { useEffect, useState } from 'react'
 import Carousel from './Carousel'
 
 
-const list_of_data = [{ title: "Visual Builder", desc: "Edit Tailwind & shadcn/ui components with a visual builder and see your changes in real-time." },
-{ title: "Code Export", desc: "Export quality Next.js & Tailwind code. Customize without limits and host anywhere." },
-{ title: "Pre-made templates", desc: "Get started quickly with beautifully designed and customizable components and templates." },
-{ title: "AI Generations", desc: "Never get stuck on a blank screen. Generate and edit components from a prompt or image." }]
+export const list_of_data = [{ title: "Visual Builder", desc: "Edit Tailwind & shadcn/ui components with a visual builder and see your changes in real-time.", videoUrl: "/feature-visual-builder.mp4" },
+{ title: "Code Export", desc: "Export quality Next.js & Tailwind code. Customize without limits and host anywhere.", videoUrl: "/feature-export.mp4" },
+{ title: "Pre-made templates", desc: "Get started quickly with beautifully designed and customizable components and templates.", videoUrl: "/feature-sections.mp4" },
+{ title: "AI Generations", desc: "Never get stuck on a blank screen. Generate and edit components from a prompt or image.", videoUrl: "/feature-ai.mp4" }]
 const SectionThree = () => {
       const [index, setIndex] = useState(0)
 
@@ -33,12 +33,12 @@ const SectionThree = () => {
                         <div>
                               <Carousel />
                         </div>
-                        <div className='flex max-md:flex-col gap-11 max-md:hidden'>
+                        <div className='flex items-center max-md:flex-col gap-11 max-md:hidden'>
                               <div className='space-y-8'>
                                     {
                                           list_of_data.map(({ desc, title }, key) => {
                                                 const is_active = key == index
-                                                return <div onClick={_ => handleChangeIndex(key)} key={key} className={`relative cursor-pointer ${is_active ? "text-white" : "text-gray-300"} group`}>
+                                                return <div onClick={_ => handleChangeIndex(key)} key={key} className={`relative max-w-xl cursor-pointer ${is_active ? "text-white" : "text-gray-300"} group`}>
                                                       {
                                                             is_active &&
                                                             <ProgressBar handleChangeIndex={handleChangeIndex} />
@@ -52,6 +52,14 @@ const SectionThree = () => {
 
 
                               </div>
+                              {
+                                    list_of_data.map(({ videoUrl }, key) => {
+                                          return key == index && (
+                                                <div key={key} className='bg-black relative overflow-hidden rounded-xl w-[45%] aspect-video'>
+                                                      <video autoPlay muted className='absolute top-0 left-0 bottom-0 right-0 bg-cover' src={videoUrl}></video>
+                                                </div>)
+                                    })
+                              }
                         </div>
                         <div className='flex max-md:flex-col gap-11 md:hidden'>
                               <div className='space-y-8'>
