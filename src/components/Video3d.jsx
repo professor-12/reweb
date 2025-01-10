@@ -27,7 +27,6 @@ const Video3d = () => {
 
                         >
                               <AnimatePresence>
-
                                     {
                                           playVideo &&
                                           <VideoFrame onClick={() => setPlayVideo(false)} />
