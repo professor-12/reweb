@@ -36,7 +36,7 @@ const HeroSection = () => {
                         </p>
 
                         {/* CTA Button */}
-                        <button className="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-[calc(1rem-2px)] sm:text-lg font-medium transition-colors focus-visible:outline-none disabled:pointer-events-none disabled:opacity-50 bg-[linear-gradient(to_bottom_right,hsl(var(--primary-gradient))_0%,hsl(var(--primary))_60%)] text-primary-foreground hover:bg-[linear-gradient(to_bottom_right,hsl(var(--primary-gradient)/0.9)_0%,hsl(var(--primary)/0.9)_60%)] h-14 px-4 sm:px-[40px] py-2 cursor-pointer">
+                        <button className="inline-flex group items-center justify-center gap-2 whitespace-nowrap rounded-[calc(1rem-2px)] sm:text-lg font-medium transition-colors focus-visible:outline-none disabled:pointer-events-none disabled:opacity-50 bg-[linear-gradient(to_bottom_right,hsl(var(--primary-gradient))_0%,hsl(var(--primary))_60%)] text-primary-foreground hover:bg-[linear-gradient(to_bottom_right,hsl(var(--primary-gradient)/0.9)_0%,hsl(var(--primary)/0.9)_60%)] h-14 px-4 sm:px-[40px] py-2 cursor-pointer">
                               <span>Build your site</span>
                               <svg
                                     xmlns="http://www.w3.org/2000/svg"
@@ -48,7 +48,7 @@ const HeroSection = () => {
                                     strokeWidth="2"
                                     strokeLinecap="round"
                                     strokeLinejoin="round"
-                                    className="lucide lucide-chevron-right transition-transform duration-300 ease-in-out group-hover:translate-x-1"
+                                    className="lucide  lucide-chevron-right transition-transform duration-300 ease-in-out group-hover:translate-x-1"
                               >
                                     <path d="m9 18 6-6-6-6"></path>
                               </svg>
