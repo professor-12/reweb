@@ -25,7 +25,7 @@ const Carousel = () => {
             <motion.div className='overflow-hidden md:hidden'>
                   <motion.div onDragEnd={onDragEnd} style={{ x, translateX: `calc(-${index * 100}%` }} transition={{ stiffness: 400, damping: 50, mass: 3, type: 'spring' }} drag="x" dragConstraints={{ left: 100, right: 100 }} className='flex  cursor-grab transition-all  active:cursor-grabbing  -translate-x-10'>
                         {list_pf_images.map((_, id) => (
-                              <motion.div key={id} animate={{ scale: index == id ? 1 : .9 }} transition={{ stiffness: 400, damping: 50, mass: 3, type: 'spring' }} className={'w-full rounded-lg flex-shrink-0 aspect-video   ' + _}></motion.div>
+                              <motion.div key={id} animate={{ scale: index == id ? 1 : .9 }} transition={{ stiffness: 400, damping: 50, mass: 3, type: 'spring' }} className={'w-full rounded-lg flex-shrink-0 aspect-video   '}></motion.div>
                         ))
                         }
                   </motion.div>

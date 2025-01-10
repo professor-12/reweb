@@ -33,12 +33,12 @@ const SectionThree = () => {
                         <div>
                               <Carousel />
                         </div>
-                        <div className='flex max-md:flex-col gap-11 max-md:hidden'>
+                        <div className='flex items-center max-md:flex-col gap-11 max-md:hidden'>
                               <div className='space-y-8'>
                                     {
                                           list_of_data.map(({ desc, title }, key) => {
                                                 const is_active = key == index
-                                                return <div onClick={_ => handleChangeIndex(key)} key={key} className={`relative cursor-pointer ${is_active ? "text-white" : "text-gray-300"} group`}>
+                                                return <div onClick={_ => handleChangeIndex(key)} key={key} className={`relative max-w-xl cursor-pointer ${is_active ? "text-white" : "text-gray-300"} group`}>
                                                       {
                                                             is_active &&
                                                             <ProgressBar handleChangeIndex={handleChangeIndex} />
@@ -52,6 +52,7 @@ const SectionThree = () => {
 
 
                               </div>
+                              <div className='bg-black rounded-xl w-[45%] aspect-video'></div>
                         </div>
                         <div className='flex max-md:flex-col gap-11 md:hidden'>
                               <div className='space-y-8'>
