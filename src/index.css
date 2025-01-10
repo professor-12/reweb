@@ -3,6 +3,13 @@
 @tailwind utilities;
 @tailwind variants;
 
+.grid-man {
+    display: grid;
+    gap: 10px;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: start;
+    grid-template-rows: masonry;
+}
 :root {
     --background: 0 0% 100%;
     --foreground: 0 0% 16%;
@@ -37,7 +44,7 @@
     --card-foreground: 0 0% 98%;
     --popover: 0 0% 17%;
     --popover-foreground: 0 0% 98%;
-    --popover-shadow: 0px 10px 20px rgba(0, 0, 0, .3);
+    --popover-shadow: 0px 10px 20px rgba(0, 0, 0, 0.3);
     --primary: 241 100% 72%;
     --primary-foreground: 210 40% 98%;
     --primary-gradient: 241 100% 72%;
@@ -54,4 +61,116 @@
     --input: 0 0% 14.9%;
     --ring: 0 0% 83.1%;
     --editor-accent: 260 99% 70%;
+}
+
+.landing-theme {
+    --background: 0 0% 0%;
+    --foreground: 270 100% 100%;
+    --card: 0 0% 13%;
+    --card-foreground: 210 40% 98%;
+    --popover: 222.2 84% 4.9%;
+    --popover-foreground: 210 40% 98%;
+    --primary: 241 100% 72%;
+    --primary-foreground: 210 40% 98%;
+    --primary-gradient: 242 100% 80%;
+    --secondary: 0 0% 13%;
+    --secondary-foreground: 210 40% 98%;
+    --secondary-focus: 0 0% 10%;
+    --muted: 0 0% 14.9%;
+    --muted-foreground: 0 0% 60%;
+    --accent: 270 100% 100%;
+    --accent-foreground: 0 0% 0%;
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 210 40% 98%;
+    --border: 0 0% 13%;
+    --input: 217.2 32.6% 17.5%;
+    --ring: 212.7 26.8% 83.9%;
+    --gradient: 241 100% 72%;
+    --gradient-secondary: 242 100% 80%;
+    --radius: 1rem;
+}
+body {
+    --font-geist-sans: "Geist", -apple-system, BlinkMacSystemFont, "Segoe UI",
+        Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif,
+        "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
+        "Noto Color Emoji";
+
+    --font-heading: "__Instrumental", -apple-system, BlinkMacSystemFont,
+        "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif,
+        "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
+        "Noto Color Emoji";
+    background: hsl(var(--background));
+}
+
+@font-face {
+    font-family: "Geist";
+    font-weight: 100 900;
+    src: url("/fonts/geist.woff2") format("woff2");
+}
+
+@font-face {
+    font-family: "__Instrumental";
+    src: url("/fonts/8de40de8211748f7-s.p.woff2") format("woff2");
+    font-style: normal;
+    font-weight: 400 700;
+    font-stretch: 100%;
+    font-display: swap;
+}
+
+.font-sans {
+    font-family: var(--font-geist-sans), ui-sans-serif, system-ui, sans-serif,
+        "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
+        "Noto Color Emoji";
+}
+
+.video-3d-container {
+    /* perspective function in transform property */
+    /* transform: perspective(1200px) rotateX(30deg) scaleX(0.8) scaleY(0.8); */
+    transform-origin: top center;
+    box-shadow: 0 0 0 8px hsl(var(--primary) / 0.3);
+}
+
+.container {
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: 2rem;
+    padding-left: 2rem;
+    max-width: 1200px;
+}
+
+.cursor-edit {
+    cursor: url("data:image/svg+xml,%3Csvg style='transform:rotate(-6deg)' width='80' height='80' version='1.1' id='Layer_1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' viewBox='0 0 32 32' enable-background='new 0 0 32 32' xml:space='preserve'%3E%3Cg%3E%3Cdefs%3E%3Crect id='SVGID_1_' width='32' height='32'/%3E%3C/defs%3E%3CclipPath id='SVGID_2_'%3E%3Cuse xlink:href='%23SVGID_1_' overflow='visible'/%3E%3C/clipPath%3E%3Cpath clip-path='url(%23SVGID_2_)' fill='%23FFFFFF' d='M11.3,20.4c-0.3-0.4-0.6-1.1-1.2-2c-0.3-0.5-1.2-1.5-1.5-1.9 c-0.2-0.4-0.2-0.6-0.1-1c0.1-0.6,0.7-1.1,1.4-1.1c0.5,0,1,0.4,1.4,0.7c0.2,0.2,0.5,0.6,0.7,0.8c0.2,0.2,0.2,0.3,0.4,0.5 c0.2,0.3,0.3,0.5,0.2,0.1c-0.1-0.5-0.2-1.3-0.4-2.1c-0.1-0.6-0.2-0.7-0.3-1.1c-0.1-0.5-0.2-0.8-0.3-1.3c-0.1-0.3-0.2-1.1-0.3-1.5 c-0.1-0.5-0.1-1.4,0.3-1.8c0.3-0.3,0.9-0.4,1.3-0.2c0.5,0.3,0.8,1,0.9,1.3c0.2,0.5,0.4,1.2,0.5,2c0.2,1,0.5,2.5,0.5,2.8 c0-0.4-0.1-1.1,0-1.5c0.1-0.3,0.3-0.7,0.7-0.8c0.3-0.1,0.6-0.1,0.9-0.1c0.3,0.1,0.6,0.3,0.8,0.5c0.4,0.6,0.4,1.9,0.4,1.8 c0.1-0.4,0.1-1.2,0.3-1.6c0.1-0.2,0.5-0.4,0.7-0.5c0.3-0.1,0.7-0.1,1,0c0.2,0,0.6,0.3,0.7,0.5c0.2,0.3,0.3,1.3,0.4,1.7 c0,0.1,0.1-0.4,0.3-0.7c0.4-0.6,1.8-0.8,1.9,0.6c0,0.7,0,0.6,0,1.1c0,0.5,0,0.8,0,1.2c0,0.4-0.1,1.3-0.2,1.7 c-0.1,0.3-0.4,1-0.7,1.4c0,0-1.1,1.2-1.2,1.8c-0.1,0.6-0.1,0.6-0.1,1c0,0.4,0.1,0.9,0.1,0.9s-0.8,0.1-1.2,0c-0.4-0.1-0.9-0.8-1-1.1 c-0.2-0.3-0.5-0.3-0.7,0c-0.2,0.4-0.7,1.1-1.1,1.1c-0.7,0.1-2.1,0-3.1,0c0,0,0.2-1-0.2-1.4c-0.3-0.3-0.8-0.8-1.1-1.1L11.3,20.4z'/%3E%3Cpath clip-path='url(%23SVGID_2_)' fill='none' stroke='%23000000' stroke-width='0.75' stroke-linecap='round' stroke-linejoin='round' d=' M11.3,20.4c-0.3-0.4-0.6-1.1-1.2-2c-0.3-0.5-1.2-1.5-1.5-1.9c-0.2-0.4-0.2-0.6-0.1-1c0.1-0.6,0.7-1.1,1.4-1.1c0.5,0,1,0.4,1.4,0.7 c0.2,0.2,0.5,0.6,0.7,0.8c0.2,0.2,0.2,0.3,0.4,0.5c0.2,0.3,0.3,0.5,0.2,0.1c-0.1-0.5-0.2-1.3-0.4-2.1c-0.1-0.6-0.2-0.7-0.3-1.1 c-0.1-0.5-0.2-0.8-0.3-1.3c-0.1-0.3-0.2-1.1-0.3-1.5c-0.1-0.5-0.1-1.4,0.3-1.8c0.3-0.3,0.9-0.4,1.3-0.2c0.5,0.3,0.8,1,0.9,1.3 c0.2,0.5,0.4,1.2,0.5,2c0.2,1,0.5,2.5,0.5,2.8c0-0.4-0.1-1.1,0-1.5c0.1-0.3,0.3-0.7,0.7-0.8c0.3-0.1,0.6-0.1,0.9-0.1 c0.3,0.1,0.6,0.3,0.8,0.5c0.4,0.6,0.4,1.9,0.4,1.8c0.1-0.4,0.1-1.2,0.3-1.6c0.1-0.2,0.5-0.4,0.7-0.5c0.3-0.1,0.7-0.1,1,0 c0.2,0,0.6,0.3,0.7,0.5c0.2,0.3,0.3,1.3,0.4,1.7c0,0.1,0.1-0.4,0.3-0.7c0.4-0.6,1.8-0.8,1.9,0.6c0,0.7,0,0.6,0,1.1 c0,0.5,0,0.8,0,1.2c0,0.4-0.1,1.3-0.2,1.7c-0.1,0.3-0.4,1-0.7,1.4c0,0-1.1,1.2-1.2,1.8c-0.1,0.6-0.1,0.6-0.1,1 c0,0.4,0.1,0.9,0.1,0.9s-0.8,0.1-1.2,0c-0.4-0.1-0.9-0.8-1-1.1c-0.2-0.3-0.5-0.3-0.7,0c-0.2,0.4-0.7,1.1-1.1,1.1 c-0.7,0.1-2.1,0-3.1,0c0,0,0.2-1-0.2-1.4c-0.3-0.3-0.8-0.8-1.1-1.1L11.3,20.4z'/%3E%3Cline clip-path='url(%23SVGID_2_)' fill='none' stroke='%23000000' stroke-width='0.75' stroke-linecap='round' x1='19.6' y1='20.7' x2='19.6' y2='17.3'/%3E%3Cline clip-path='url(%23SVGID_2_)' fill='none' stroke='%23000000' stroke-width='0.75' stroke-linecap='round' x1='17.6' y1='20.7' x2='17.5' y2='17.3'/%3E%3Cline clip-path='url(%23SVGID_2_)' fill='none' stroke='%23000000' stroke-width='0.75' stroke-linecap='round' x1='15.6' y1='17.3' x2='15.6' y2='20.7'/%3E%3C/g%3E%3C/svg%3E%0A")
+            32 32,
+        pointer;
+}
+
+.col-count {
+    column-count: 3;
+}
+
+.accordion-up {
+    animation: accordion-up 0.2s ease-out both;
+}
+
+.accordion-down {
+    animation: accordion-down 0.2s ease-out both;
+}
+/* Animations */
+
+@keyframes accordion-up {
+    0% {
+        height: 76px;
+    }
+    100% {
+        height: 0px;
+    }
+}
+@keyframes accordion-down {
+    0% {
+        height: 0;
+    }
+    100% {
+        height: 76px;
+    }
 }
