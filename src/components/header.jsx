@@ -11,21 +11,21 @@ const Header = () => {
                         </div>
                         <div className='max-md:hidden flex gap-4 items-center'>
                               <ul className='flex font-medium text-muted-foreground text-sm gap-10 justify-end mr-5'>
-                                    <li>Templates
-                                    </li>
-                                    <li>
+                                    <li className='hover:text-white transition-all cursor-pointer'>Templates
+                                    </li >
+                                    <li className='hover:text-white transition-all cursor-pointer'>
                                           Community
                                     </li>
-                                    <li>
+                                    <li className='hover:text-white transition-all cursor-pointer'>
                                           Roadmap
                                     </li>
-                                    <li>
+                                    <li className='hover:text-white transition-all cursor-pointer'>
 
                                           Pricing
                                     </li>
                               </ul>
                               <div className='gap-2 flex '>
-                                    <button className='bg-white whitespace-nowrap p-2 px-[16px] text-sm rounded-[calc(1rem-2px)] font-medium text-black'>Log In</button>
+                                    <button className='bg-white hover:bg-white/90 whitespace-nowrap p-2 px-[16px] text-sm rounded-[calc(1rem-2px)] font-medium text-black'>Log In</button>
                                     <button className='inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-[calc(1rem-2px)] text-sm font-medium transition-colors focus-visible:outline-none disabled:pointer-events-none disabled:opacity-50 bg-[linear-gradient(to_bottom_right,hsl(var(--primary-gradient))_0%,hsl(var(--primary))_60%)] text-primary-foreground hover:bg-[linear-gradient(to_bottom_right,hsl(var(--primary-gradient)/0.9)_0%,hsl(var(--primary)/0.9)_60%)] h-10 px-4 py-2 cursor-pointer'>Get Started</button>
                               </div>
                         </div>
