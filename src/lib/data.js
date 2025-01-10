@@ -2,54 +2,59 @@ export const testimonial_data = [
     {
         comment:
             "It practically solves every issue I have with Webflow and Framer. This is so much easier to use as a developer!",
-        picture: "",
+        picture: "/avatar-jaiden.webp",
         name: "Jaiden Lee",
         username: "@buildjaiden",
     },
     {
         comment: "This looks really freaking cool!!",
-        picture: "",
+        picture: "/avatar-james.webp",
         name: "James Q Quick",
         username: "@jamesqquick",
     },
     {
         comment:
             "Absolutely love Reweb! Such a game-changer for building beautiful landing pages effortlessly.",
-        picture: "",
+        picture: "/avatar-wayne.webp",
         name: "Wayne",
         username: "@wayne_dev",
     },
-    { comment: "Amazing.", picture: "", name: "shadcn", username: "@shadcn" },
+    {
+        comment: "Amazing.",
+        picture: "/avatar-shadcn.webp",
+        name: "shadcn",
+        username: "@shadcn",
+    },
     {
         comment:
             "This is awesome. Better than Framer/Wordpress as you can take the code and continue working on it instantly yourself.",
-        picture: "",
+        picture: "/avatar-soumya.webp",
         name: "soumya dot dev",
         username: "@geekysrm",
     },
     {
         comment:
             "This is super cool! Very easy to use, and better than trying to mock things up in Figma.",
-        picture: "",
+        picture: "/avatar-mike.webp",
         name: "Mike Knapp",
         username: "@mikeee",
     },
     {
         comment:
             "I really have been missing this product for years. It feels like a much more natural way of working.",
-        picture: "",
+        picture: "/avatar-ninja.webp",
         name: "Ninjanordbo",
         username: "@ninjanordbo",
     },
     {
         comment: "This is so tastefully built. Loving it.",
-        picture: "",
+        picture: "/avatar-kabir.webp",
         name: "Kabir Asani",
         username: "@KabirAsani",
     },
     {
         comment: "This is my new favorite way of building projects quickly.",
-        picture: "",
+        picture: "public/avatar-paul.webp",
         name: "Paul Bratslavsky",
         username: "@codingthirty",
     },

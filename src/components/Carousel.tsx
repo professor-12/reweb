@@ -20,6 +20,7 @@ const Carousel = () => {
             }
       }
 
+
       return (
             <motion.div className='overflow-hidden md:hidden'>
                   <motion.div onDragEnd={onDragEnd} style={{ x, translateX: `calc(-${index * 100}%` }} transition={{ stiffness: 400, damping: 50, mass: 3, type: 'spring' }} drag="x" dragConstraints={{ left: 100, right: 100 }} className='flex  cursor-grab transition-all  active:cursor-grabbing  -translate-x-10'>
